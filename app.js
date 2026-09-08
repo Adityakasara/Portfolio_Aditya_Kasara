@@ -519,6 +519,7 @@ function initTerminal() {
 
     contact: `Contact & Connect:
   📧 Email: adityakasara2004@gmail.com
+  💼 LinkedIn: https://linkedin.com/in/adityakasara45
   🐙 GitHub: https://github.com/adityakasara
   🤗 Hugging Face: https://huggingface.co/spaces/45ttiana/petroai`,
 
