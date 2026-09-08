@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kasara Aditya — AI/ML Engineer & Full-Stack Developer</title>
+  <meta name="description" content="Personal portfolio of Kasara Aditya — Applied Deep Learning, Computer Vision, RAG & LLMs, and Enterprise Full-Stack Web Platforms.">
+  <meta name="keywords" content="Aditya Kasara, Kasara Aditya, AI Engineer, Machine Learning, Deep Learning, Full Stack, Python, FastAPI, YOLOv8, PyTorch, React, Portfolio">
+  <meta name="author" content="Kasara Aditya">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Kasara Aditya — AI/ML Engineer & Full-Stack Developer">
+  <meta property="og:description" content="Portfolio of Kasara Aditya — Building intelligent systems, computer vision pipelines, and scalable web platforms.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/adityakasara">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/202406727?v=4">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;600&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Ambient Background Canvas / Gradient Glows -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow glow-3" aria-hidden="true"></div>
+
+  <!-- Top Floating Navigation -->
+  <header class="navbar-wrapper">
+    <nav class="navbar glass-card" aria-label="Main Navigation">
+      <a href="#top" class="brand-logo" aria-label="Aditya Kasara Home">
+        <span class="logo-badge">AK</span>
+        <span class="brand-name">aditya<span class="brand-dot">.</span></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#terminal" class="nav-link">Terminal</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="12" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+
+        <a href="https://github.com/adityakasara" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline nav-gh-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          <span>GitHub</span>
+        </a>
+
+        <button id="mobile-menu-btn" class="icon-btn mobile-only" aria-label="Toggle menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-drawer" class="mobile-drawer" aria-hidden="true">
+    <div class="mobile-drawer-content glass-card">
+      <ul class="mobile-nav-links">
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#skills" class="mobile-link">Skills</a></li>
+        <li><a href="#projects" class="mobile-link">Projects</a></li>
+        <li><a href="#experience" class="mobile-link">Experience</a></li>
+        <li><a href="#terminal" class="mobile-link">Terminal</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+      <div class="mobile-drawer-footer">
+        <a href="#contact" class="btn btn-primary btn-block">Get In Touch</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="top" class="container">
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <div class="hero-tag-row">
+          <div class="status-pill">
+            <span class="status-dot pulsing"></span>
+            <span>Open to AI/ML & Engineering Roles</span>
+          </div>
+          <div class="location-pill">
+            <span>📍 India</span>
+          </div>
+        </div>
+
+        <p class="hero-salutation">hi, hello, namaste 👋</p>
+        
+        <h1 class="hero-title">
+          I'm <span class="gradient-text">Kasara Aditya</span>.
+        </h1>
+
+        <p class="hero-lead">
+          AI & Machine Learning Engineer & Full-Stack Developer turning complex telemetry, computer vision pipelines, and deep neural models into robust, real-world deployed software.
+        </p>
+
+        <div class="hero-stats-strip">
+          <div class="stat-item">
+            <span class="stat-number" id="hero-repo-count">17+</span>
+            <span class="stat-label">GitHub Repos</span>
+          </div>
+          <div class="stat-separator"></div>
+          <div class="stat-item">
+            <span class="stat-number">95%+</span>
+            <span class="stat-label">Model Accuracy</span>
+          </div>
+          <div class="stat-separator"></div>
+          <div class="stat-item">
+            <span class="stat-number">14.4k+</span>
+            <span class="stat-label">Records Modeled</span>
+          </div>
+          <div class="stat-separator"></div>
+          <div class="stat-item">
+            <span class="stat-number">HPCL</span>
+            <span class="stat-label">AI/ML Internship</span>
+          </div>
+        </div>
+
+        <div class="hero-cta-group">
+          <a href="#projects" class="btn btn-primary">
+            <span>Explore Projects</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="#experience" class="btn btn-secondary">
+            <span>View Experience</span>
+          </a>
+          <a href="https://github.com/adityakasara" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" title="Visit GitHub Profile">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span>@adityakasara</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-card glass-card">
+          <div class="card-header-bar">
+            <span class="window-dot red"></span>
+            <span class="window-dot yellow"></span>
+            <span class="window-dot green"></span>
+            <span class="card-title-text">aditya_profile.py</span>
+          </div>
+          <div class="code-preview">
+            <pre><code><span class="token-keyword">class</span> <span class="token-class">AdityaKasara</span>:
+    <span class="token-property">focus</span> = [<span class="token-string">"Applied ML"</span>, <span class="token-string">"Vision"</span>, <span class="token-string">"RAG"</span>]
+    <span class="token-property">internship</span> = <span class="token-string">"HPCL (PetroAI Lead)"</span>
+    <span class="token-property">core_stack</span> = [<span class="token-string">"Python"</span>, <span class="token-string">"FastAPI"</span>, <span class="token-string">"PyTorch"</span>]
+    <span class="token-property">status</span> = <span class="token-string">"Ready to innovate &amp; ship"</span>
+
+    <span class="token-keyword">def</span> <span class="token-func">build_impact</span>(<span class="token-param">self</span>):
+        <span class="token-keyword">return</span> <span class="token-string">"Transforming data into reliable AI systems."</span></code></pre>
+          </div>
+          <div class="card-footer-metrics">
+            <div class="mini-tag">⚡ Fast APIs</div>
+            <div class="mini-tag">🧠 Deep Learning</div>
+            <div class="mini-tag">🛡️ Real-world ML</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section-container">
+      <div class="section-header">
+        <div class="section-tag">About Me</div>
+        <h2 class="section-title">A quick hello.</h2>
+        <p class="section-subtitle">
+          Building practical machine learning architectures, automated detection systems, and scalable backend platforms.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card glass-card main-about">
+          <div class="about-icon-badge">💡</div>
+          <h3>Who I Am & What I Do</h3>
+          <p>
+            I am a Computer Science Engineer and Machine Learning specialist driven by taking ML models out of sterile notebooks and into production-grade, resilient systems.
+          </p>
+          <p>
+            During my <strong>AI/ML Internship at Hindustan Petroleum Corporation Limited (HPCL)</strong>, I architected <strong>PetroAI</strong>—a suite encompassing unsupervised anomaly detection on high-frequency refinery sensors, real-time computer vision safety compliance (YOLOv8), crude oil price forecasting with Facebook Prophet, and a Google Gemini RAG assistant for industry standards.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <span class="highlight-icon">🎯</span>
+              <div>
+                <strong>Applied Computer Vision</strong>
+                <p>Fine-tuning YOLOv8 and EfficientNetB0 architectures with Grad-CAM visual interpretability.</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">⚡</span>
+              <div>
+                <strong>Production Backends & APIs</strong>
+                <p>Engineered RESTful & microservice architectures in FastAPI and Flask with JWT RBAC and SQLAlchemy.</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">🔬</span>
+              <div>
+                <strong>End-to-End ML Pipelines</strong>
+                <p>Data preprocessing, SMOTE class-imbalance correction, SHAP explainability, and containerized deployment.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-sidebar">
+          <div class="about-card glass-card info-card">
+            <div class="info-badge-label">Education</div>
+            <h4>B.Tech in Computer Science & Engineering</h4>
+            <p class="info-sub">Specialization in AI / ML & Software Systems</p>
+            <div class="pill-group">
+              <span class="badge">Pre-Final Year Project: TomatoDx</span>
+              <span class="badge">Computer Vision</span>
+              <span class="badge">DSA & Algorithms</span>
+            </div>
+          </div>
+
+          <div class="about-card glass-card info-card">
+            <div class="info-badge-label">Active Focus Areas</div>
+            <ul class="focus-list">
+              <li><span class="bullet">▹</span> Deep Learning & Vision Diagnostics</li>
+              <li><span class="bullet">▹</span> RAG Systems & LLM Tool Use</li>
+              <li><span class="bullet">▹</span> Real-Time Sensor Telemetry & Anomaly AI</li>
+              <li><span class="bullet">▹</span> Resilient Offline-First Web Architectures</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DRAGGABLE SKILL STICKERS (INTERACTIVE) -->
+    <section id="skills" class="section-container skills-playground-section">
+      <div class="section-header">
+        <div class="section-tag">Interactive Playground</div>
+        <h2 class="section-title">Draggable skill stickers.</h2>
+        <p class="section-subtitle">
+          grab them, toss them, they'll bounce back with physics 🎈
+        </p>
+      </div>
+
+      <div class="physics-instructions">
+        <span>💡 Tip: Click & drag any sticker badge below to fling it across the playground!</span>
+        <button id="reset-stickers-btn" class="btn btn-sm btn-ghost">Reset Positions</button>
+      </div>
+
+      <div id="stickers-board" class="stickers-board glass-card" aria-label="Interactive draggable skills board">
+        <!-- Stickers will be initialized here with spring physics -->
+      </div>
+
+      <!-- Organized Skills Categories -->
+      <div class="skills-catalog-grid">
+        <div class="skill-category-card glass-card">
+          <div class="cat-header">
+            <span class="cat-icon">🧠</span>
+            <h3>AI, ML & Deep Learning</h3>
+          </div>
+          <div class="skill-pill-list">
+            <span class="skill-chip">PyTorch</span>
+            <span class="skill-chip">TensorFlow / Keras</span>
+            <span class="skill-chip">YOLOv8 (Ultralytics)</span>
+            <span class="skill-chip">EfficientNetB0</span>
+            <span class="skill-chip">Scikit-Learn</span>
+            <span class="skill-chip">XGBoost</span>
+            <span class="skill-chip">Facebook Prophet</span>
+            <span class="skill-chip">Isolation Forest</span>
+            <span class="skill-chip">Grad-CAM</span>
+            <span class="skill-chip">SHAP Explainability</span>
+            <span class="skill-chip">SMOTE Imbalance</span>
+            <span class="skill-chip">OpenCV</span>
+          </div>
+        </div>
+
+        <div class="skill-category-card glass-card">
+          <div class="cat-header">
+            <span class="cat-icon">🤖</span>
+            <h3>GenAI, RAG & LLMs</h3>
+          </div>
+          <div class="skill-pill-list">
+            <span class="skill-chip">Google Gemini API</span>
+            <span class="skill-chip">LangChain / RAG</span>
+            <span class="skill-chip">TF-IDF Vector Indexing</span>
+            <span class="skill-chip">Prompt Engineering</span>
+            <span class="skill-chip">Document Parsing</span>
+            <span class="skill-chip">Hugging Face Transformers</span>
+          </div>
+        </div>
+
+        <div class="skill-category-card glass-card">
+          <div class="cat-header">
+            <span class="cat-icon">💻</span>
+            <h3>Languages & Core</h3>
+          </div>
+          <div class="skill-pill-list">
+            <span class="skill-chip">Python 3.10+</span>
+            <span class="skill-chip">C++</span>
+            <span class="skill-chip">JavaScript (ES6+)</span>
+            <span class="skill-chip">Dart / Flutter</span>
+            <span class="skill-chip">SQL (SQLite / Postgres)</span>
+            <span class="skill-chip">HTML5 / CSS3</span>
+            <span class="skill-chip">Go</span>
+          </div>
+        </div>
+
+        <div class="skill-category-card glass-card">
+          <div class="cat-header">
+            <span class="cat-icon">⚙️</span>
+            <h3>Backend, Web & Tools</h3>
+          </div>
+          <div class="skill-pill-list">
+            <span class="skill-chip">FastAPI</span>
+            <span class="skill-chip">Flask</span>
+            <span class="skill-chip">SQLAlchemy</span>
+            <span class="skill-chip">Pydantic v2</span>
+            <span class="skill-chip">JWT Auth & RBAC</span>
+            <span class="skill-chip">Docker</span>
+            <span class="skill-chip">Power BI</span>
+            <span class="skill-chip">Chart.js</span>
+            <span class="skill-chip">Git & GitHub</span>
+            <span class="skill-chip">Jupyter Notebooks</span>
+            <span class="skill-chip">Kaggle API</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section-container">
+      <div class="section-header">
+        <div class="section-tag">Selected Works</div>
+        <div class="section-title-sync-row">
+          <h2 class="section-title">Things I've built &amp; broken.</h2>
+          <div class="live-sync-indicator" id="github-sync-status" title="Synced directly with GitHub API in real time">
+            <span class="sync-dot pulsing"></span>
+            <span class="sync-text">Live GitHub Sync Active</span>
+            <button id="manual-sync-btn" class="sync-refresh-btn" title="Refresh repositories now">↻</button>
+          </div>
+        </div>
+        <p class="section-subtitle">
+          Production ML systems, full-stack web platforms, computer vision tools, and analytical dashboards. Auto-updates when new repos are added on GitHub.
+        </p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="project-filters">
+        <button class="filter-tab active" data-filter="all">All Projects</button>
+        <button class="filter-tab" data-filter="ai">🤖 AI / Deep Learning</button>
+        <button class="filter-tab" data-filter="fullstack">🌐 Full Stack & APIs</button>
+        <button class="filter-tab" data-filter="analytics">📊 Analytics & Dashboards</button>
+        <button class="filter-tab" data-filter="mobile">📱 Mobile & Systems</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid" id="projects-container">
+        <!-- 1. PetroAI (Featured) -->
+        <div class="project-card glass-card featured-project" data-category="ai">
+          <div class="project-banner">
+            <div class="project-badge-featured">⭐ Flagship Internship Project</div>
+            <span class="project-number">project #01</span>
+          </div>
+          <div class="project-body">
+            <div class="project-title-row">
+              <h3 class="project-title">PetroAI — HPCL Operations Intelligence</h3>
+              <div class="project-links">
+                <a href="https://huggingface.co/spaces/45ttiana/petroai" target="_blank" rel="noopener noreferrer" class="link-icon" title="Hugging Face Live Demo">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+                <a href="https://github.com/Adityakasara/PetroAI_HPCL_Internship2026" target="_blank" rel="noopener noreferrer" class="link-icon" title="GitHub Repository">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <p class="project-desc">
+              Comprehensive industrial AI platform for Hindustan Petroleum Corporation Limited (HPCL). Features 4 real ML modules: Isolation Forest for sensor anomaly detection, YOLOv8 for PPE compliance scanning, Facebook Prophet for crude price time-series forecasting, and Google Gemini RAG for OISD safety standard search.
+            </p>
+            <div class="project-metrics-row">
+              <span class="metric-pill">📊 14,447 Telemetry Records</span>
+              <span class="metric-pill">🦺 YOLOv8 PPE Vision</span>
+              <span class="metric-pill">🤖 Gemini RAG + TF-IDF</span>
+            </div>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Flask</span>
+              <span class="tag">YOLOv8</span>
+              <span class="tag">Prophet</span>
+              <span class="tag">Isolation Forest</span>
+              <span class="tag">Gemini API</span>
+              <span class="tag">Chart.js</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://huggingface.co/spaces/45ttiana/petroai" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Live Demo ↗</a>
+              <a href="https://github.com/Adityakasara/PetroAI_HPCL_Internship2026" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">View Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. TomatoDx -->
+        <div class="project-card glass-card" data-category="ai">
+          <div class="project-banner">
+            <span class="project-badge">🌱 Pre-Final Year Engineering</span>
+            <span class="project-number">project #02</span>
+          </div>
+          <div class="project-body">
+            <div class="project-title-row">
+              <h3 class="project-title">TomatoDx — Tomato Leaf Disease Diagnosis</h3>
+              <div class="project-links">
+                <a href="https://github.com/Adityakasara/TomatoDx" target="_blank" rel="noopener noreferrer" class="link-icon" title="GitHub Repository">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <p class="project-desc">
+              Computer vision diagnostic system classifying 11 tomato disease categories (bacterial, fungal, insect, viral, and healthy) with >95% accuracy. Employs fine-tuned EfficientNetB0 transfer learning and Grad-CAM visual heatmaps for agronomical explainability.
+            </p>
+            <div class="project-metrics-row">
+              <span class="metric-pill">🎯 95–97% Test Accuracy</span>
+              <span class="metric-pill">🌿 11 Leaf Classes</span>
+              <span class="metric-pill">🔬 Grad-CAM Overlays</span>
+            </div>
+            <div class="project-tags">
+              <span class="tag">TensorFlow</span>
+              <span class="tag">Keras</span>
+              <span class="tag">EfficientNetB0</span>
+              <span class="tag">Grad-CAM</span>
+              <span class="tag">PlantVillage</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/Adityakasara/TomatoDx" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">Explore Repository</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. FraudShield -->
+        <div class="project-card glass-card" data-category="ai">
+          <div class="project-banner">
+            <span class="project-badge">🛡️ Financial AI</span>
+            <span class="project-number">project #03</span>
+          </div>
+          <div class="project-body">
+            <div class="project-title-row">
+              <h3 class="project-title">FraudShield — Anomaly &amp; Fraud Analytics</h3>
+              <div class="project-links">
+                <a href="https://github.com/Adityakasara/fraud-detection" target="_blank" rel="noopener noreferrer" class="link-icon" title="GitHub Repository">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <p class="project-desc">
+              Real-time credit card transaction fraud detector. Trains 4 models (XGBoost, Random Forest, Logistic Regression, Isolation Forest) with SMOTE imbalance handling, real-time risk gauges, SHAP feature attribution bars, and batch CSV predictions.
+            </p>
+            <div class="project-metrics-row">
+              <span class="metric-pill">⚡ Near Real-Time Inference</span>
+              <span class="metric-pill">⚖️ SMOTE Resampling</span>
+              <span class="metric-pill">📈 SHAP Feature Bars</span>
+            </div>
+            <div class="project-tags">
+              <span class="tag">FastAPI</span>
+              <span class="tag">React + Vite</span>
+              <span class="tag">XGBoost</span>
+              <span class="tag">Scikit-Learn</span>
+              <span class="tag">SQLite</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/Adityakasara/fraud-detection" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. ShopSphere -->
+        <div class="project-card glass-card" data-category="fullstack">
+          <div class="project-banner">
+            <span class="project-badge">🛒 Enterprise Full-Stack</span>
+            <span class="project-number">project #04</span>
+          </div>
+          <div class="project-body">
+            <div class="project-title-row">
+              <h3 class="project-title">ShopSphere — E-Commerce Platform</h3>
+              <div class="project-links">
+                <a href="https://adityakasara.github.io/ShopSphere_Ecommerce/" target="_blank" rel="noopener noreferrer" class="link-icon" title="GitHub Pages Live Demo">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+                <a href="https://github.com/Adityakasara/ShopSphere_Ecommerce" target="_blank" rel="noopener noreferrer" class="link-icon" title="GitHub Repository">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <p class="project-desc">
+              Glassmorphic full-stack platform built with FastAPI, SQLAlchemy, and Pydantic v2. Includes JWT authentication with refresh token rotation, RBAC (Customer/Admin), dynamic catalog filtering, simulated Razorpay checkout gateway, and admin telemetry.
+            </p>
+            <div class="project-metrics-row">
+              <span class="metric-pill">🔐 JWT + Refresh Rotation</span>
+              <span class="metric-pill">💳 Simulated Payment API</span>
+              <span class="metric-pill">🐳 Docker Ready</span>
+            </div>
+            <div class="project-tags">
+              <span class="tag">FastAPI</span>
+              <span class="tag">SQLAlchemy</span>
+              <span class="tag">Pydantic v2</span>
+              <span class="tag">Python 3.10</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://adityakasara.github.io/ShopSphere_Ecommerce/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Live Demo ↗</a>
+              <a href="https://github.com/Adityakasara/ShopSphere_Ecommerce" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">Source Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. CampusPass Vizag -->
+        <div class="project-card glass-card" data-category="fullstack">
+          <div class="project-banner">
+            <span class="project-badge">🎫 Campus Pass Hub</span>
+            <span class="project-number">project #05</span>
+          </div>
+          <div class="project-body">
+            <div class="project-title-row">
+              <h3 class="project-title">CampusPass Vizag — Event Pass Generator</h3>
+              <div class="project-links">
+                <a href="https://github.com/Adityakasara/Campus_Pass" target="_blank" rel="noopener noreferrer" class="link-icon" title="GitHub Repository">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <p class="project-desc">
+              Ticketing and attendee management platform built for Visakhapatnam universities (AU, GITAM, GVPCE, ANITS, IIMV). Features institutional domain email verification, atomic capacity reservation locks, scannable QR pass generation, and organizer check-in scanning.
+            </p>
+            <div class="project-metrics-row">
+              <span class="metric-pill">📱 Dynamic QR Badges</span>
+              <span class="metric-pill">🔒 Domain Verification</span>
+              <span class="metric-pill">📄 PDF Pass Engine</span>
+            </div>
+            <div class="project-tags">
+              <span class="tag">Flask</span>
+              <span class="tag">Python</span>
+              <span class="tag">SQLite</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">QR Engine</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/Adityakasara/Campus_Pass" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">Explore Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Reliance Retail Dashboard -->
+        <div class="project-card glass-card" data-category="analytics">
+          <div class="project-banner">
+            <span class="project-badge">🏬 Enterprise Analytics</span>
+            <span class="project-number">project #06</span>
+          </div>
+          <div class="project-body">
+            <div class="project-title-row">
+              <h3 class="project-title">Reliance Retail Limited — Power BI Suite</h3>
+              <div class="project-links">
+                <a href="https://adityakasara.github.io/Retail_DashBoard/" target="_blank" rel="noopener noreferrer" class="link-icon" title="Interactive Dashboard">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+                <a href="https://github.com/Adityakasara/Retail_DashBoard" target="_blank" rel="noopener noreferrer" class="link-icon" title="GitHub Repository">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <p class="project-desc">
+              Sales revenue and gross margin profitability dashboard engineered for Reliance Retail Limited. Models multi-division performance across Reliance Digital, Reliance Trends, Smart Bazaar, and JioMart Omni formats with custom DAX measures.
+            </p>
+            <div class="project-metrics-row">
+              <span class="metric-pill">📈 INR (₹) Financial Models</span>
+              <span class="metric-pill">🏬 4 Retail Formats</span>
+              <span class="metric-pill">💡 DAX Measures</span>
+            </div>
+            <div class="project-tags">
+              <span class="tag">Power BI</span>
+              <span class="tag">Data Modeling</span>
+              <span class="tag">DAX</span>
+              <span class="tag">Business Analytics</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://adityakasara.github.io/Retail_DashBoard/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Open Dashboard ↗</a>
+              <a href="https://github.com/Adityakasara/Retail_DashBoard" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">View Repo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. FoodShare -->
+        <div class="project-card glass-card" data-category="fullstack">
+          <div class="project-banner">
+            <span class="project-badge">🍲 Community Platform</span>
+            <span class="project-number">project #07</span>
+          </div>
+          <div class="project-body">
+            <div class="project-title-row">
+              <h3 class="project-title">FoodShare — Community Food Rescue</h3>
+              <div class="project-links">
+                <a href="https://adityakasara.github.io/FoodShare/" target="_blank" rel="noopener noreferrer" class="link-icon" title="Live Web App">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+                <a href="https://github.com/Adityakasara/FoodShare" target="_blank" rel="noopener noreferrer" class="link-icon" title="GitHub Repository">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <p class="project-desc">
+              PWA connecting surplus food donors with volunteers. Features an Urgency Distribution Engine (Critical, High, Medium, Low), multi-step delivery state tracker, and real-time claim management.
+            </p>
+            <div class="project-metrics-row">
+              <span class="metric-pill">📱 PWA Installable</span>
+              <span class="metric-pill">⏱️ Expiration Urgency</span>
+              <span class="metric-pill">🚚 Live Delivery Tracker</span>
+            </div>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">PWA</span>
+              <span class="tag">HTML5 / CSS3</span>
+              <span class="tag">Responsive</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://adityakasara.github.io/FoodShare/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Live App ↗</a>
+              <a href="https://github.com/Adityakasara/FoodShare" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. ShikshaSetu -->
+        <div class="project-card glass-card" data-category="mobile">
+          <div class="project-banner">
+            <span class="project-badge">📱 Mobile App</span>
+            <span class="project-number">project #08</span>
+          </div>
+          <div class="project-body">
+            <div class="project-title-row">
+              <h3 class="project-title">ShikshaSetu — Student Support App</h3>
+              <div class="project-links">
+                <a href="https://github.com/Adityakasara/ShikshaSetu" target="_blank" rel="noopener noreferrer" class="link-icon" title="GitHub Repository">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <p class="project-desc">
+              Cross-platform Flutter mobile application supporting student workflows, reusable widgets, structured state navigation, and academic assistance modules.
+            </p>
+            <div class="project-metrics-row">
+              <span class="metric-pill">⭐ 2 GitHub Stars</span>
+              <span class="metric-pill">📱 iOS / Android Ready</span>
+            </div>
+            <div class="project-tags">
+              <span class="tag">Flutter</span>
+              <span class="tag">Dart</span>
+              <span class="tag">Mobile UI</span>
+              <span class="tag">State Management</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/Adityakasara/ShikshaSetu" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">View Repo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. CodeXB Resilient Web & Kerala Farmer Bot -->
+        <div class="project-card glass-card" data-category="mobile">
+          <div class="project-banner">
+            <span class="project-badge">⚡ Offline Systems & IoT</span>
+            <span class="project-number">project #09</span>
+          </div>
+          <div class="project-body">
+            <div class="project-title-row">
+              <h3 class="project-title">Disaster-Resilient Web &amp; Agri-Bot</h3>
+              <div class="project-links">
+                <a href="https://github.com/Adityakasara/CodeXB-Code_Fusion_PS1" target="_blank" rel="noopener noreferrer" class="link-icon" title="GitHub Repository">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <p class="project-desc">
+              Resilient web system engineered to operate under zero or intermittent disaster-zone connectivity (CodeXB) alongside <strong>Kerala-Farmer-Bot</strong> in C++ for automated regional crop advisory.
+            </p>
+            <div class="project-metrics-row">
+              <span class="metric-pill">📡 Zero-Bandwidth Cache</span>
+              <span class="metric-pill">🚜 C++ Automated Bot</span>
+            </div>
+            <div class="project-tags">
+              <span class="tag">C++</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Offline First</span>
+              <span class="tag">IoT Systems</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/Adityakasara/CodeXB-Code_Fusion_PS1" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">CodeXB Repo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="section-container">
+      <div class="section-header">
+        <div class="section-tag">Work History</div>
+        <h2 class="section-title">Where I've been showing up.</h2>
+        <p class="section-subtitle">
+          Engineering industrial AI pipelines, production backends, and full-stack software systems.
+        </p>
+      </div>
+
+      <div class="timeline-container">
+        <!-- HPCL AI/ML Internship -->
+        <div class="timeline-card glass-card">
+          <div class="timeline-meta">
+            <span class="timeline-period">2026</span>
+            <span class="badge badge-featured">Industrial AI Internship</span>
+          </div>
+          <div class="timeline-content">
+            <h3 class="role-title">AI / Machine Learning Intern</h3>
+            <h4 class="company-name">
+              <span class="comp-icon">🛢️</span> Hindustan Petroleum Corporation Limited (HPCL)
+            </h4>
+            <p class="role-summary">
+              Spearheaded the development and end-to-end architecture of <strong>PetroAI</strong>—an integrated industrial operations intelligence and safety compliance ecosystem for refinery infrastructure.
+            </p>
+            <ul class="deliverable-list">
+              <li>
+                <strong>Unsupervised Anomaly Detection:</strong> Engineered high-frequency telemetry streaming pipelines (vibration, temperature, pressure, rotational speed) and trained unsupervised <em>Isolation Forest</em> models to identify anomalous mechanical behaviors in real time across 14,447 records.
+              </li>
+              <li>
+                <strong>Computer Vision Safety (PPE Audit):</strong> Implemented fine-tuned <em>YOLOv8</em> object detection combined with HSV color masks to conduct real-time worker safety compliance audits for helmets and high-visibility vests.
+              </li>
+              <li>
+                <strong>Crude Oil Price Forecasting:</strong> Integrated live Brent crude pricing feeds with <em>Facebook Prophet</em> time-series models, enabling macroeconomic geopolitical shock simulations.
+              </li>
+              <li>
+                <strong>PetroBot RAG Knowledge Base:</strong> Developed an AI regulations assistant using the <em>Google Gemini API</em> coupled with a local TF-IDF vector search index to rapidly query Oil Industry Safety Directorate (OISD) and API standards.
+              </li>
+              <li>
+                <strong>Production Deployment:</strong> Containerized the complete Flask backend and frontend into Docker and deployed live on Hugging Face Spaces.
+              </li>
+            </ul>
+
+            <div class="timeline-tags">
+              <span class="tag">Isolation Forest</span>
+              <span class="tag">YOLOv8</span>
+              <span class="tag">Facebook Prophet</span>
+              <span class="tag">Gemini API</span>
+              <span class="tag">Python Flask</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Hugging Face</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Academic & Open Source Projects -->
+        <div class="timeline-card glass-card">
+          <div class="timeline-meta">
+            <span class="timeline-period">2025 — 2026</span>
+            <span class="badge">Engineering &amp; Open Source</span>
+          </div>
+          <div class="timeline-content">
+            <h3 class="role-title">Lead Project Architect &amp; Developer</h3>
+            <h4 class="company-name">
+              <span class="comp-icon">💻</span> Open Source &amp; Engineering Labs
+            </h4>
+            <ul class="deliverable-list">
+              <li>
+                <strong>TomatoDx Computer Vision:</strong> Architected pre-final year agricultural pathology classification model achieving >95% accuracy over 11 leaf disease classes using EfficientNetB0 with Grad-CAM visual heatmaps.
+              </li>
+              <li>
+                <strong>FraudShield ML Backend:</strong> Designed end-to-end financial transaction risk detection in FastAPI with SMOTE imbalance handling and SHAP feature importance.
+              </li>
+              <li>
+                <strong>ShopSphere Enterprise Platform:</strong> Created full-stack e-commerce engine with JWT rotation, RBAC, and simulated payment gateways on GitHub Pages.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE TERMINAL WIDGET -->
+    <section id="terminal" class="section-container">
+      <div class="section-header">
+        <div class="section-tag">Developer Console</div>
+        <h2 class="section-title">Interactive terminal.</h2>
+        <p class="section-subtitle">
+          Type commands like <code class="inline-code">help</code>, <code class="inline-code">skills</code>, <code class="inline-code">projects</code>, or <code class="inline-code">hpcl</code> to explore via CLI.
+        </p>
+      </div>
+
+      <div class="terminal-window glass-card">
+        <div class="terminal-bar">
+          <div class="terminal-dots">
+            <span class="window-dot red"></span>
+            <span class="window-dot yellow"></span>
+            <span class="window-dot green"></span>
+          </div>
+          <span class="terminal-title">aditya@portfolio: ~ (zsh)</span>
+          <div class="terminal-actions">
+            <button id="clear-term-btn" class="term-action-btn" title="Clear Terminal">clear</button>
+          </div>
+        </div>
+        <div class="terminal-body" id="terminal-body">
+          <div class="terminal-output" id="terminal-output">
+            <p class="term-line term-welcome">Welcome to Aditya Kasara's Interactive Terminal v2.0</p>
+            <p class="term-line term-dim">Type <span class="term-accent">'help'</span> to view available commands.</p>
+          </div>
+          <div class="terminal-input-row">
+            <span class="term-prompt">aditya@portfolio:~$</span>
+            <input type="text" id="terminal-input" class="terminal-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Type a command...">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section-container">
+      <div class="section-header">
+        <div class="section-tag">Let's Connect</div>
+        <h2 class="section-title">Let's build something amazing together.</h2>
+        <p class="section-subtitle">
+          Recruiter, engineering lead, collaborator, or someone with a bold AI idea — my inbox is always open.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Information Cards -->
+        <div class="contact-cards-col">
+          <div class="contact-card glass-card">
+            <div class="contact-icon">📧</div>
+            <div class="contact-detail">
+              <span class="contact-label">Email</span>
+              <span class="contact-val" id="email-address">adityakasara2004@gmail.com</span>
+            </div>
+            <button id="copy-email-btn" class="btn btn-sm btn-outline copy-btn" title="Copy email to clipboard">
+              <span class="copy-text">Copy</span>
+            </button>
+          </div>
+
+          <a href="https://github.com/adityakasara" target="_blank" rel="noopener noreferrer" class="contact-card glass-card contact-link-card">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </div>
+            <div class="contact-detail">
+              <span class="contact-label">GitHub</span>
+              <span class="contact-val">github.com/adityakasara</span>
+            </div>
+            <span class="card-arrow">↗</span>
+          </a>
+
+          <a href="https://huggingface.co/spaces/45ttiana/petroai" target="_blank" rel="noopener noreferrer" class="contact-card glass-card contact-link-card">
+            <div class="contact-icon">🤗</div>
+            <div class="contact-detail">
+              <span class="contact-label">Hugging Face Live Spaces</span>
+              <span class="contact-val">huggingface.co/spaces/45ttiana/petroai</span>
+            </div>
+            <span class="card-arrow">↗</span>
+          </a>
+
+          <div class="contact-card glass-card">
+            <div class="contact-icon">💼</div>
+            <div class="contact-detail">
+              <span class="contact-label">Opportunities</span>
+              <span class="contact-val">Full-time Roles, ML Engineering, Internships</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Message Form -->
+        <div class="contact-form-card glass-card">
+          <h3>Send a Quick Note</h3>
+          <p class="form-sub">Have a question or project in mind? Drop a message below!</p>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="form-name">Your Name</label>
+              <input type="text" id="form-name" required placeholder="Jane Doe">
+            </div>
+            <div class="form-group">
+              <label for="form-email">Your Email</label>
+              <input type="email" id="form-email" required placeholder="jane@example.com">
+            </div>
+            <div class="form-group">
+              <label for="form-message">Message</label>
+              <textarea id="form-message" rows="4" required placeholder="Hi Aditya, I'd love to chat about..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              <span>Send Message</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+            <div id="form-feedback" class="form-feedback"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <p class="footer-copy">
+          Made with ♥, clean code, and trained neural nets by <strong>Kasara Aditya</strong>.
+        </p>
+        <p class="footer-year">© 2026 Kasara Aditya. All rights reserved.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#top" class="footer-link">Back to Top ↑</a>
+        <a href="https://github.com/adityakasara" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+        <a href="#projects" class="footer-link">Projects</a>
+        <a href="#experience" class="footer-link">Experience</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
